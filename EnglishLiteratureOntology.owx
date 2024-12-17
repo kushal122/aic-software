@@ -1,0 +1,602 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Alliteration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antagonist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Austen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biography"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comedy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dickens"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Essay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Figures_of_Speech"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#First-Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hamlet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Humorous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiteraryDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiteraryGenre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiteraryWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metaphor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Narrative_Style"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-Fiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Novelist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Period"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Play"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Playwright"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poetry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protagonist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Renaissance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rhyme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shakespeare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Short_Story"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Simile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sonnet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sound_Devices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Style"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#The_Raven"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tragedy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Victorian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wordsworth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToPeriod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCharacter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStyle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#writes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#writtenBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBirthYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDeathYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNationality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPublicationDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hamlet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shakespeare"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Alliteration"/>
+        <Class IRI="#Figures_of_Speech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antagonist"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Austen"/>
+        <Class IRI="#Novelist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biography"/>
+        <Class IRI="#Non-Fiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comedy"/>
+        <Class IRI="#Drama"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dickens"/>
+        <Class IRI="#Novelist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drama"/>
+        <Class IRI="#LiteraryGenre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Epic"/>
+        <Class IRI="#Poetry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Essay"/>
+        <Class IRI="#Non-Fiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fiction"/>
+        <Class IRI="#LiteraryGenre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Figures_of_Speech"/>
+        <Class IRI="#LiteraryDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#First-Person"/>
+        <Class IRI="#Narrative_Style"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Formal"/>
+        <Class IRI="#Tone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hamlet"/>
+        <Class IRI="#Play"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Humorous"/>
+        <Class IRI="#Tone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metaphor"/>
+        <Class IRI="#Sound_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Modern"/>
+        <Class IRI="#Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Narrative_Style"/>
+        <Class IRI="#Style"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-Fiction"/>
+        <Class IRI="#LiteraryGenre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Novelist"/>
+        <Class IRI="#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Play"/>
+        <Class IRI="#LiteraryWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Playwright"/>
+        <Class IRI="#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poem"/>
+        <Class IRI="#LiteraryWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poet"/>
+        <Class IRI="#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poetry"/>
+        <Class IRI="#LiteraryGenre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protagonist"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Renaissance"/>
+        <Class IRI="#Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rhyme"/>
+        <Class IRI="#Figures_of_Speech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shakespeare"/>
+        <Class IRI="#Playwright"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Short_Story"/>
+        <Class IRI="#Fiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simile"/>
+        <Class IRI="#Sound_Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sonnet"/>
+        <Class IRI="#Poetry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sound_Devices"/>
+        <Class IRI="#LiteraryDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#The_Raven"/>
+        <Class IRI="#Poem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tone"/>
+        <Class IRI="#Style"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tragedy"/>
+        <Class IRI="#Drama"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Victorian"/>
+        <Class IRI="#Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wordsworth"/>
+        <Class IRI="#Poet"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Alliteration"/>
+        <Class IRI="#Rhyme"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Antagonist"/>
+        <Class IRI="#Protagonist"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Austen"/>
+        <Class IRI="#Dickens"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Biography"/>
+        <Class IRI="#Essay"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Comedy"/>
+        <Class IRI="#Tragedy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Drama"/>
+        <Class IRI="#Fiction"/>
+        <Class IRI="#Non-Fiction"/>
+        <Class IRI="#Poetry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Epic"/>
+        <Class IRI="#Sonnet"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Figures_of_Speech"/>
+        <Class IRI="#Sound_Devices"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Formal"/>
+        <Class IRI="#Humorous"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Metaphor"/>
+        <Class IRI="#Simile"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Modern"/>
+        <Class IRI="#Renaissance"/>
+        <Class IRI="#Victorian"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Narrative_Style"/>
+        <Class IRI="#Tone"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Novelist"/>
+        <Class IRI="#Playwright"/>
+        <Class IRI="#Poet"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#LiteraryWork"/>
+        <NamedIndividual IRI="#Hamlet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Shakespeare"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPublicationDate"/>
+        <NamedIndividual IRI="#Hamlet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBirthYear"/>
+        <NamedIndividual IRI="#Shakespeare"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1564</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNationality"/>
+        <NamedIndividual IRI="#Shakespeare"/>
+        <Literal>English</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongsToGenre"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongsToPeriod"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCharacter"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGenre"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStyle"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#writes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#writtenBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToGenre"/>
+        <Class IRI="#LiteraryDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToPeriod"/>
+        <Class IRI="#LiteraryWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#LiteraryWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStyle"/>
+        <Class IRI="#LiteraryWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedIn"/>
+        <Class IRI="#LiteraryDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#writes"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#writtenBy"/>
+        <Class IRI="#LiteraryWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#LiteraryWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToGenre"/>
+        <Class IRI="#LiteraryGenre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToPeriod"/>
+        <Class IRI="#Period"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#LiteraryGenre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStyle"/>
+        <Class IRI="#Style"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedIn"/>
+        <Class IRI="#LiteraryWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#writes"/>
+        <Class IRI="#LiteraryWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#writtenBy"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAge"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasBirthYear"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDeathYear"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasGender"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNationality"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPublicationDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBirthYear"/>
+        <Class IRI="#Author"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDeathYear"/>
+        <Class IRI="#Author"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGender"/>
+        <Class IRI="#Character"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNationality"/>
+        <Class IRI="#Author"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPublicationDate"/>
+        <Class IRI="#LiteraryWork"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBirthYear"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDeathYear"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNationality"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPublicationDate"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

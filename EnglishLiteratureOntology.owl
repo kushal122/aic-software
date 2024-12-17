@@ -1,0 +1,618 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology/"
+     xml:base="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:EnglishLiteratureOntology="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#belongsToGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#belongsToGenre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryDevice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#belongsToPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#belongsToPeriod">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryWork"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Period"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasCharacter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasGenre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryWork"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryGenre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasStyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasStyle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryWork"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Style"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#usedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#usedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryDevice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryWork"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#writes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#writes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryWork"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#writtenBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#writtenBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryWork"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryWork"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Character"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasBirthYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasBirthYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasDeathYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasDeathYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasGender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasNationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasNationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasPublicationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#hasPublicationDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryWork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Alliteration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Alliteration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Figures_of_Speech"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Rhyme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Antagonist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Antagonist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Character"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Protagonist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Austen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Austen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Novelist"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Dickens"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Biography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Biography">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Non-Fiction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Essay"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Character"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Comedy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Comedy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Drama"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Tragedy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Dickens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Dickens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Novelist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Drama -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Drama">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Epic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Epic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Poetry"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Sonnet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Essay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Essay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Non-Fiction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Fiction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Fiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Figures_of_Speech -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Figures_of_Speech">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryDevice"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Sound_Devices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#First-Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#First-Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Narrative_Style"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Formal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Formal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Tone"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Humorous"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Hamlet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Hamlet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Play"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Humorous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Humorous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Tone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryDevice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryDevice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryGenre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryGenre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryWork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryWork"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Metaphor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Metaphor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Sound_Devices"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Simile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Modern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Modern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Period"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Narrative_Style -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Narrative_Style">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Style"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Tone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Non-Fiction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Non-Fiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Novelist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Novelist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Author"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Period -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Period"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Play -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Play">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryWork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Playwright -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Playwright">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Author"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Poem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Poem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryWork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Poet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Poet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Author"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Poetry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Poetry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryGenre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Protagonist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Protagonist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Renaissance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Renaissance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Period"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Rhyme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Rhyme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Figures_of_Speech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Shakespeare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Shakespeare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Playwright"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Short_Story -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Short_Story">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Fiction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Simile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Simile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Sound_Devices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Sonnet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Sonnet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Poetry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Sound_Devices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Sound_Devices">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Style -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Style"/>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#The_Raven -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#The_Raven">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Poem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Tone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Tone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Style"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Tragedy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Tragedy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Drama"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Victorian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Victorian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Period"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Wordsworth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Wordsworth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Poet"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Hamlet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Hamlet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#LiteraryWork"/>
+        <EnglishLiteratureOntology:hasPublicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1600</EnglishLiteratureOntology:hasPublicationDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Shakespeare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Shakespeare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Author"/>
+        <EnglishLiteratureOntology:hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1564</EnglishLiteratureOntology:hasBirthYear>
+        <EnglishLiteratureOntology:hasNationality>English</EnglishLiteratureOntology:hasNationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Drama"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Fiction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Non-Fiction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Poetry"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Modern"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Renaissance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Victorian"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Novelist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Playwright"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/techassignment02/ontologies/2024/11/EnglishLiteratureOntology#Poet"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
